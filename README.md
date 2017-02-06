@@ -1,2 +1,2 @@
 # Comida-Sabrosa
-A Mexican Restaurant HTML Theme Build in Bootstrap, JQuery and Javascript
+A Mexican Restaurant HTML Theme Built in Bootstrap, JQuery and Javascript
