@@ -1,4 +1,4 @@
-﻿<!doctype html>
+﻿!doctype html>
 
 <html lang="en">
 <head>
@@ -19,70 +19,77 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
 </head>
-
-<body>
-    <header>
-        <h1>BIO Page</h1>
-    </header>
-    <h2>Who We Are</h2>
     
-    
-    <div class="container">
-        <h3></h3>
-        <p></p>
-        <img src="img/eric.jpg" class="img-circle" alt="eric" width="304" height="304">
-        <img src="img/alicia.jpg" class="img-circle" alt="alicia" width="304" height="304">
-        <img src="img/jelani.jpg" class="img-circle" alt="jelani" width="304" height="304">
-        <img src="img/greg.jpg" class="img-circle" alt="greg" width="304" height="304">
-        <img src="img/hamed.jpg" class="img-circle" alt="hamed" width="304" height="304">
-        <img src="img/chaz.jpg" class="img-circle" alt="chaz" width="304" height="304">
-        <p>
-            Our General Manager, Eric Conklin, comes from a family of 4 generations of
-            successful proprietary restaurant operation. Eric's exceptional involvement
-            with the community allows us to provide a unique and enjoyable dinning
-            experience to all of our patrons.
-        </p>
-        <p>
-            Our Bar Manager, Alicia Reaves, has re-defined the bar for professional
-            mixologists with first place awards in the San Francisco World Spirits
-            Competition, the World Beverage Competition, and the International Spirits
-            Competition. Her award winning recipie for The Gold Margarita has become an
-            industry standard worldwide.
-        </p>
-        <p>
-            Our Master Chef, Jelani Richardson, is one of only 68 Certified Master Chef's
-            in the US. Master Chief Jelani's award winning recepies have been handed down
-            from generation to generation and are revered as some of the most authentic
-            Mexican dishes available.
-        </p>
-        <p>
-            Our Sous Chef, Gregory Chapin, has attended such prestigious institutions
-            as The Cullinary Institute of America, Le Cordon Blue Institute of Cullinary
-            Art, and Sazon. Gregory's passion for Mexican cuisine is apparent in every
-            dish we proudly serve.
-        </p>
-        <p>
-            Our restaurant Manager, Hamed Abou-merhi, adds his excellent experience from
-            his previous positions at the acclaimed Jaleo Restaurant in the Cosmopolitan of
-            Las Vegas and the Guy Savoy at Caesars Palace. Hamed is dedicated to providing
-            our patrons with a casual and comforable dinning experience.
-        </p>
-        <p>
-            Our supplier, Chaz Kovach, has over 30 years experience operating 3 local farms,
-            provinding our restaurant with the finest and freshest ingriedents available,
-            allowing us to consistantly present our patrons with the best tasting, authentic
-            Mexican dishes around.
-        </p>
+    <body>
+<!--Sidebar Nav-->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
     </div>
+<!--Header-->
+<nav class="navbar navbar-default navbar-fixed-top" id="mainnav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="min-toggle-button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="menu-button-text" onclick="openNav()"><button type="button" class="navbar-toggle collapsed" id="full-toggle-button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>Menu</span>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <a class="navbar-brand">Comida Sabrosa</a>
+            <ul class="nav navbar-nav" id="ul-collapse">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" id="navbar-right-order">
+                <li><i class="fa fa-credit-card fa-3x" aria-hidden="true" style="padding-top: 5px;"></i><a href="../navbar/" style="display: inline;" class="right-header-link">Order Online</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
 
 
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.getElemetById("mainnav").style.marginLeft = "250px";
+    }
 
-
-    <!--Generic Javascript file for all custom javascript-->
-    <script src="js/scripts.js"></script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.getElemetById("mainnav").style.marginLeft = "0";
+    }
+</script>
+<!--Generic Javascript file for all custom javascript-->
+<script type="text/javascript" src="js/scripts.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
-</html>
