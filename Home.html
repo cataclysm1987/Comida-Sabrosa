@@ -131,12 +131,19 @@
 </div>
 
 
-    <!--Generic Javascript file for all custom javascript-->
-    <script src="js/scripts.js"></script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.getElemetById("mainnav").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.getElemetById("mainnav").style.marginLeft = "0";
+    }
+</script>
 
 
 	<!--Generic Javascript file for all custom javascript-->
