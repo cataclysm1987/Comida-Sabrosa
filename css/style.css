@@ -17,10 +17,13 @@ Black: #0C0C0C
 }
 
 .jumbotron {
-    background-image: url("../img/jumbotronFood1.jpg");
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url("../img/jumbotronFood1.jpg");
     background-color: #17234E;
     margin-bottom: 0;
-    min-height: 50%;
+    height: 300px;
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
@@ -61,8 +64,11 @@ Black: #0C0C0C
 
 .right-header-link {
     display: inline; 
-    font-size: 20px; 
+    font-size: 25px; 
     line-height: 1.3;
+    font-family: Catamaran;
+    max-height: 57px;
+    padding-bottom: -50px;
 }
 
 #min-toggle-button {
@@ -88,6 +94,7 @@ Black: #0C0C0C
     margin: auto;
     margin-left: 0;
     font-size: 32px;
+    color: #FF9440;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
@@ -178,7 +185,8 @@ header span {
     font-size: 25px;
     color: #333;
     display: block;
-    transition: 0.3s
+    transition: 0.3s;
+    font-family: TequilaSunset;
     
 }
 
@@ -188,7 +196,7 @@ header span {
 
 .sidenav .closebtn {
     position: absolute;
-    top: 9.5%;
+    
     right: 10%;
     font-size: 36px;
     margin-left: 50px;
@@ -198,6 +206,7 @@ header span {
     line-height: 1.65;
     font-size: 30px;
     cursor: pointer;
+    font-family: Catamaran;
 }
 
 #main {
@@ -223,7 +232,7 @@ header span {
 /*Body content area*/
 
 body { 
-    padding-top: 65px;
+    padding-top: 56px;
     min-height: 1200px;
     position: relative;
     background-color: #efefef;
@@ -323,3 +332,16 @@ hr {
 
 /*Contact form*/
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: TequilaSunset;
+}
+
+p {
+    font-family: Catamaran;
+}
+
+/*Footer*/
+
+.bottom  {
+    text-align: center;
+}
