@@ -184,7 +184,8 @@ header span {
     font-size: 25px;
     color: #333;
     display: block;
-    transition: 0.3s
+    transition: 0.3s;
+    font-family: TequilaSunset;
     
 }
 
@@ -194,7 +195,7 @@ header span {
 
 .sidenav .closebtn {
     position: absolute;
-    top: 9.5%;
+    
     right: 10%;
     font-size: 36px;
     margin-left: 50px;
