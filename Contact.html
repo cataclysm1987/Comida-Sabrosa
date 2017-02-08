@@ -21,14 +21,76 @@
 </head>
 
 <body>
-<h1>Hello, world!</h1>
+<!--Sidebar Nav-->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+<!--Header-->
+<nav class="navbar navbar-default navbar-fixed-top" id="mainnav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="min-toggle-button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="menu-button-text" onclick="openNav()"><button type="button" class="navbar-toggle collapsed" id="full-toggle-button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>Menu</span>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <a class="navbar-brand">Comida Sabrosa</a>
+            <ul class="nav navbar-nav" id="ul-collapse">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" id="navbar-right-order">
+                <li><i class="fa fa-credit-card fa-3x" aria-hidden="true" style="padding-top: 5px;"></i><a href="../navbar/" style="display: inline;" class="right-header-link">Order Online</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+   
 
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.getElemetById("mainnav").style.marginLeft = "250px";
+    }
 
-	<!--Generic Javascript file for all custom javascript-->
-  	<script src="js/scripts.js"></script>
-  	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.getElemetById("mainnav").style.marginLeft = "0";
+    }
+</script>
+<!--Generic Javascript file for all custom javascript-->
+<script type="text/javascript" src="js/scripts.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
