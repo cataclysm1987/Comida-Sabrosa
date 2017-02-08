@@ -22,6 +22,19 @@ Black: #0C0C0C
     color: #000;
 }
 
+
+.jumbotron h1{
+    color: #ff9440;
+    font-family: TequilaSunset-Regular;
+}
+
+.jumbotron p{
+    color: #efefef;
+    font-family: TequilaSunset-Regular;
+}
+
+
+
 .center-block {
   display: block;
   margin-right: auto;
@@ -193,6 +206,7 @@ body {
     padding-top: 65px;
     min-height: 1200px;
     position: relative;
+    background-color: #efefef;
 }
 
 .container {
