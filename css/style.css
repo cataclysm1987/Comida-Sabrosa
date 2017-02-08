@@ -8,12 +8,18 @@ Black: #0C0C0C
 *{
 
 }
-
+@font-face {
+  font-family: TequilaSunset;
+  src: local("Tequila Sunset"),
+       local("Tequila-Sunset"),
+       url(../fonts/TequilaSunset-Regular.ttf);
+  font-weight: bold;
+}
 
 .jumbotron {
     background-image: url("../img/jumbotronFood1.jpg");
     background-color: #17234E;
-    margin-bottom: 0;`enter code here`
+    margin-bottom: 0;
     min-height: 50%;
     background-repeat: no-repeat;
     background-position: center;
@@ -60,6 +66,7 @@ Black: #0C0C0C
 }
 
 .navbar-brand {
+    font-family: TequilaSunset;
     position: absolute;
     width: 30%;
     left: 35%;
