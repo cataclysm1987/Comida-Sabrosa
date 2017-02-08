@@ -31,12 +31,12 @@ Black: #0C0C0C
 
 .jumbotron h1{
     color: #ff9440;
-    font-family: TequilaSunset-Regular;
+    font-family: TequilaSunset;
 }
 
 .jumbotron p{
     color: #efefef;
-    font-family: TequilaSunset-Regular;
+    font-family: TequilaSunset;
 }
 
 
@@ -260,20 +260,65 @@ body {
     color: #EFEFEF;
 }
 
-/*Footer elements*/
-
-#footer {
-    background-color: #EFEFEF;
-    border-top: 1px #333;
-    width: 100%;
-    text-align: center;
-    height: 100px;
-    bottom: 0;
-    position: absolute;
+.featurette-heading{
+    color: #ff9440;
+    font-family: TequilaSunset;
 }
 
-#footer h3 {
-    font-size: 18px;
+.row featurette, .col-md-5{
+    margin-top: 10px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #8c8c8c;
+  border-bottom: 1px solid #fff;
+}
+
+
+/*Three Column row on home page*/
+
+.row {
+    margin-bottom: 15px;
+}
+
+.row h4 {
+    color:#ff9440;
+    font-family: TequilaSunset;
+}
+
+
+/*Footer elements*/
+.footer {
+    background: #00919F;
+    padding: 10px 0;
+}
+
+.footer h3 {
+    text-align: center;
+}
+
+.footer p {
+    text-align: center;
+}
+
+.footer a {
+    color: #70726F;
+    font-size: 20px;
+    padding: 10px;
+    border-right: 1px solid #70726F;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.footer a:first-child {
+    border-left: 1px solid #70726F;
+}
+
+.footer a:hover {
+    color: white;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
 }
 
 /*Contact form*/
