@@ -23,7 +23,7 @@ Black: #0C0C0C
     ), url("../img/jumbotronFood1.jpg");
     background-color: #17234E;
     margin-bottom: 0;
-    min-height: 50%;
+    height: 300px;
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
@@ -285,3 +285,16 @@ body {
 
 /*Contact form*/
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: TequilaSunset;
+}
+
+p {
+    font-family: Catamaran;
+}
+
+/*Footer*/
+
+.bottom  {
+    text-align: center;
+}
