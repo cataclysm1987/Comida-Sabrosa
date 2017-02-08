@@ -94,6 +94,7 @@ Black: #0C0C0C
     margin: auto;
     margin-left: 0;
     font-size: 32px;
+    color: #FF9440;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
