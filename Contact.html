@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Home - Comida Sabrosa</title>
+  <title style="font-family: tequilasunset">Contact Comida Sabrosa</title>
   <meta name="description" content="Welcome to Our Mexican Restaurant">
   <meta name="author" content="The Swingline Staplers">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,7 @@
   <![endif]-->
 </head>
 
-<body>
+<body style="background-color:#efefef">
 <!--Sidebar Nav-->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -67,8 +67,8 @@
     </div>
 </nav>
     <div style="background-image: url(img/chips.jpg); background-size:cover" class="container">
-        <h1>Contact Us</h1>
-        <h3>Come Find Us!</h3>
+        <h1 style="font-family: tequilasunset; color:#ff944d">Contact Info</h1>
+        <h3 style="font-family: tequilasunset; color:#ff944d">Come Find Us!</h3>
     </div>
 
 <div class="container">
@@ -79,15 +79,42 @@
     <br />
     <br />
 
-    <h4 class="container"><b>Address</b></h4>
-   <p class="container">Comida Sabrosa <br />
-    Advanced Technology Eating Center<br />
-    3409 Woodland Ave Cleveland, Ohio 44115</p><br /><br />
+    <script>
 
-    <h4 class="container">Phone Number</h4>
+        //$(".testClass").hover(function () {
+        //    $(".testClass").slideUp(3000);
+        //});
+         
+         $(document).ready(function () {
+             $("h4").hover(function () {
+                 $("#sli").slideDown("2000");
+             });
+
+             $("h4").hover(function () {
+                 $("#sli").slideUp("2000");
+             });
+         });
+
+
+             //$("button").click(function () {
+             //    //$("#test").hide();
+             //    //$(".testClass").hide();
+             //    //$(".testClass").toggle();
+             //    //$(".testClass").fadeToggle(3500);
+             //    $(".sli").slideToggle(3000);
+             //});
+        
+    </script>
+  <div class="container">
+    <h4 id="hov" style="font-family: tequilasunset; color:#ff944d"><b>Address</b></h4>
+   <p id="sli">Comida Sabrosa <br />
+    Advanced Technology Eating Center<br />
+    3409 Woodland Ave Cleveland, Ohio 44115</p><br /><br /></div>
+
+    <h4 class="container"  style="font-family: tequilasunset; color:#ff944d">Phone Number</h4>
     <p class="container">(216) 555-9598</p><br /><br />
 
-    <h4 class="container">Leave Us a Comment</h4>
+    <h4 class="container" style="font-family: tequilasunset; color:#ff944d">Leave Us a Comment</h4>
     
     <!--Comment Box-->
     <div class="container" id="HCB_comment_box">
@@ -104,13 +131,13 @@
      </script>
   
     <footer class="container">
-        <p>Posted by: Swingline Staplers</p>
+        <p style="font-family: tequilasunset">Created by- Swingline Staplers</p>
         <p>
-            Contact information: <a href="jrichardson.jr125@gmail.com">
+            Contact information: <a href="jrichardson.jr125@gmail.com" style="color:#00919f">
                 jrichardson.jr125@gmail.com
             </a>
             <br />
-            <a href="#top">Back to Top</a>
+            <a href="#top" style="color:#00919f">Back to Top</a>
         </p>
     </footer>
     <!--Comment box href-->
