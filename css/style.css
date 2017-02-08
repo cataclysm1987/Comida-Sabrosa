@@ -17,7 +17,10 @@ Black: #0C0C0C
 }
 
 .jumbotron {
-    background-image: url("../img/jumbotronFood1.jpg");
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url("../img/jumbotronFood1.jpg");
     background-color: #17234E;
     margin-bottom: 0;
     min-height: 50%;
@@ -31,12 +34,12 @@ Black: #0C0C0C
 
 .jumbotron h1{
     color: #ff9440;
-    font-family: TequilaSunset-Regular;
+    font-family: TequilaSunset;
 }
 
 .jumbotron p{
     color: #efefef;
-    font-family: TequilaSunset-Regular;
+    font-family: TequilaSunset;
 }
 
 
@@ -61,8 +64,11 @@ Black: #0C0C0C
 
 .right-header-link {
     display: inline; 
-    font-size: 20px; 
+    font-size: 25px; 
     line-height: 1.3;
+    font-family: Catamaran;
+    max-height: 57px;
+    padding-bottom: -50px;
 }
 
 #min-toggle-button {
@@ -198,6 +204,7 @@ header span {
     line-height: 1.65;
     font-size: 30px;
     cursor: pointer;
+    font-family: Catamaran;
 }
 
 #main {
@@ -223,7 +230,7 @@ header span {
 /*Body content area*/
 
 body { 
-    padding-top: 65px;
+    padding-top: 56px;
     min-height: 1200px;
     position: relative;
     background-color: #efefef;
