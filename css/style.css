@@ -8,6 +8,10 @@ Black: #0C0C0C
 *{
 
 }
+
+body {
+    min-height: 1200px;
+}
 @font-face {
   font-family: TequilaSunset;
   src: local("Tequila Sunset"),
@@ -102,6 +106,10 @@ Black: #0C0C0C
     background-color: #FF9440;
 }
 
+/*MEDIA QUERIES*/
+@media screen and (min-width: 1000px) and (max-width: 1206px) { 
+    
+}
 @media (max-width: 768px) {
 
     #full-toggle-button {
@@ -116,7 +124,9 @@ Black: #0C0C0C
         display: none;
     }
 
-
+    .gmap-container {
+        width: 100%;
+    }
 }
 @media (min-width: 768px) {
     #min-toggle-button {
@@ -140,11 +150,15 @@ Black: #0C0C0C
     }
 
 }
-@media(min-width: 1000px) {
+@media(min-width: 1037px) {
     .navbar-brand {
-        width: 30%;
-        left: 35%;
+        width: 35%;
+        left: 32.5%;
     }
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
 .navbar-header 
@@ -214,10 +228,7 @@ header span {
     padding: 16px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+
 
 .navbar .navbar-nav {
   display: inline-block;
@@ -312,12 +323,14 @@ hr {
 }
 
 .footer a {
-    color: #70726F;
+    color: #333;
     font-size: 20px;
     padding: 10px;
-    border-right: 1px solid #70726F;
+    border-right: 1px solid #333;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
+        margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .footer a:first-child {
@@ -450,3 +463,15 @@ div.circle-avatar{
     /* make it a cirkle */
     border-radius:50%;
     
+/*Contact page*/
+
+#hov
+{
+    color: #ff944d;
+}
+#hov:hover {
+    color:#00919f;
+}
+
+
+
