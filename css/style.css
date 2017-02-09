@@ -56,6 +56,10 @@ body {
     font-family: TequilaSunset;
 }
 
+.jumbotron h2 {
+    color: white;
+}
+
 .jumbotron p{
     color: #efefef;
     font-family: TequilaSunset;
