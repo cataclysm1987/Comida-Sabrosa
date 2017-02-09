@@ -1,244 +1,236 @@
-﻿<!doctype html>
+<!doctype html>
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>Home - Comida Sabrosa</title>
-  <meta name="description" content="Welcome to Our Mexican Restaurant">
-  <meta name="author" content="The Swingline Staplers">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home - Comida Sabrosa</title>
+    <meta name="description" content="Welcome to Our Mexican Restaurant">
+    <meta name="author" content="The Swingline Staplers">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet"href="css/bootstrap.css?v=1.0">
-  <link rel="stylesheet"href="css/font-awesome.css?v=1.0">
-  <link rel="stylesheet" href="css/style.css?v=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css?v=1.0">
+    <link rel="stylesheet" href="css/font-awesome.css?v=1.0">
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
 
-  <!--[if lt IE 9]>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
-	<!-- Add jQuery library -->
-	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-	<script type="text/javascript">
+    <script type="text/javascript">
 		$(document).ready(function() {
 			$(".fancybox").fancybox();
 		});
-	</script>
-	<!-- Add fancyBox -->
-	<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.6" type="text/css" media="screen" />
-	<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.6"></script>
+    </script>
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.6" type="text/css" media="screen" />
+    <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.6"></script>
 
-	<!-- Optionally add helpers - button, thumbnail and/or media -->
-	<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-	<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-	<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 
-	<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-	<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-   
-		
+    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+
 </head>
 
 <body>
-<!--Sidebar Nav-->
-	<div id="mySidenav" class="sidenav">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<a href="Home.html">Home</a>
-		<a href="About.html">About</a>
-		<a href="Menu.html">Menu</a>
-		<a href="Bio.html">Bio</a>
-		<a href="Gallery.html">Gallery</a>
-		<a href="Order.html">Order Online</a>
-		<a href="Contact.html">Contact</a>
+    <!--Sidebar Nav-->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Home.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Bio.html">Bio</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Order.html">Order Online</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+    <!--Header-->
+    <nav class="navbar navbar-default navbar-fixed-top" id="mainnav">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="min-toggle-button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <span class="menu-button-text" onclick="openNav()">
+                    <button type="button" class="navbar-toggle collapsed" id="full-toggle-button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>Menu
+                </span>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <a class="navbar-brand">Comida Sabrosa</a>
+                <ul class="nav navbar-nav" id="ul-collapse">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="Bio.html">Bio</a></li>
+                    <li><a href="Gallery.html" class="active">Gallery</a></li>
+                    <li><a href="Order.html">Order</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" id="navbar-right-order">
+                    <li><i class="fa fa-credit-card fa-3x" aria-hidden="true" style="padding-top: 5px;"></i><a href="Order.html" style="display: inline;" class="right-header-link">Order Online</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+
+    <div class="container-fluid" style="border:1px solid #cecece; min-height: 1200px;">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <h1 class="page-header">Gallery</h1>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/chipsRS.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Fresh Chips</h2>
+                            <a href="img/chips.jpg" class="info fancybox" rel="group">View Full Image</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/japmargRS.jpg" alt="">
+                        <div class="overlay">
+                            <h2>House Margaritas</h2>
+                            <a href="img/japmarg.jpg" class="info fancybox" rel="group">View Full Image</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/vegetariandishRS.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Vegetarian Dishes</h2>
+                            <a href="img/vegetariandish.jpg" class="info fancybox" rel="group">View Full Image</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/freshingredient3RS.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Fresh Ingredients</h2>
+                            <a href="img/freshingredient3.jpg" class="info fancybox" rel="group">View Full Image</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/tequilabottleRS.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Top Shelf Tequila</h2>
+                            <a href="img/tequilabottle.jpg" class="info fancybox" rel="group">View Full Image</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/tamaleRS.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Tamales</h2>
+                            <a href="img/tamale.jpg" class="info fancybox" rel="group">View Full Image</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/entreeRS.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Delicious Entrees</h2>
+                            <a href="img/entree.jpg" class="info fancybox" rel="group">View Full Image</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/numberJuanRS.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Happy Hour </h2>
+                            <a href="img/numberJuan.jpg" class="info fancybox" rel="group">View Full Image</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/dessertdrinkRS.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Dessert Drinks</h2>
+                            <a href="img/dessertdrink.jpg" class="info fancybox" rel="group">View Full Image</a>
+                        </div>
+                    </div>
+                </div>
+               
+
+            </div>
+        </div>
 	</div>
-<!--Header-->
-<nav class="navbar navbar-default navbar-fixed-top" id="mainnav">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="min-toggle-button">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<span class="menu-button-text" onclick="openNav()"><button type="button" class="navbar-toggle collapsed" id="full-toggle-button">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>Menu</span>
-		</div>
-		<div id="navbar" class="navbar-collapse collapse">
-			<a class="navbar-brand">Comida Sabrosa</a>
-			<ul class="nav navbar-nav" id="ul-collapse">
-				<li><a href="Home.html">Home</a></li>
-				<li><a href="About.html">About</a></li>
-				<li><a href="Menu.html">Menu</a></li>
-				<li><a href="Bio.html">Bio</a></li>
-				<li><a href="Gallery.html" class="active">Gallery</a></li>
-				<li><a href="Order.html">Order</a></li>
-				<li><a href="Contact.html">Contact</a></li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right" id="navbar-right-order">
-				<li><i class="fa fa-credit-card fa-3x" aria-hidden="true" style="padding-top: 5px;"></i><a href="Order.html" style="display: inline;" class="right-header-link">Order Online</a></li>
-			</ul>
-		</div><!--/.nav-collapse -->
-	</div>
-</nav>
 
-  
-		<div class="container-fluid" style="border:1px solid #cecece; min-height: 1200px;">
-		   <div class="container">
-				<div class="row">
 
-			<div class="col-lg-12" style="text-align: center;">
-				<h1 class="page-header">Gallery</h1>
-			</div>
 
-			<div class="col-lg-3 col-md-4 col-xs-12 thumb">
-				
-					<div class="hovereffect">
-						<img class="img-responsive" src="img/chipsRS.jpg" alt="">
-						<div class="overlay">
-							<h2>Fresh Chips</h2>
-							<a href="img/chips.jpg"class="info fancybox" rel="group">View Full Image</a>
-						</div>
-					</div>
-				
-			</div>
-			<div class="col-lg-3 col-md-4 col-xs-12 thumb">
-				<div class="hovereffect">
-					<img class="img-responsive" src="img/japmargRS.jpg" alt="">
-					<div class="overlay">
-						<h2>Japanese Margarita</h2>
-						<a href="img/japmarg.jpg" class="info fancybox" rel="group">View Full Image</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-xs-12 thumb">
-				<div class="hovereffect">
-					<img class="img-responsive" src="img/vegetariandishRS.jpg" alt="">
-					<div class="overlay">
-						<h2>Vegetarian Dish</h2>
-						<a href="img/vegetariandish.jpg" class="info fancybox" rel="group">View Full Image</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-xs-12 thumb">
-				<div class="hovereffect">
-					<img class="img-responsive" src="img/freshingredient3RS.jpg" alt="">
-					<div class="overlay">
-						<h2>Fresh Ingredients</h2>
-						<a href="img/freshingredient3.jpg" class="info fancybox" rel="group">View Full Image</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-xs-12 thumb">
-				<div class="hovereffect">
-					<img class="img-responsive" src="img/tequilabottleRS.jpg" alt="">
-					<div class="overlay">
-						<h2>Top Shelf Tequila</h2>
-						<a href="img/tequilabottle.jpg" class="info fancybox" rel="group">View Full Image</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-xs-12 thumb">
-				<div class="hovereffect">
-					<img class="img-responsive" src="img/tamaleRS.jpg" alt="">
-					<div class="overlay">
-						<h2>Tamales</h2>
-						<a href="img/tamale.jpg" class="info fancybox" rel="group">View Full Image</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-xs-12 thumb">
-				<div class="hovereffect">
-					<img class="img-responsive" src="img/entreeRS.jpg" alt="">
-					<div class="overlay">
-						<h2>Delicious Entrees</h2>
-						<a href="img/entree.jpg" class="info fancybox" rel="group">View Full Image</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-xs-12 thumb">
-				<div class="hovereffect">
-					<img class="img-responsive" src="img/numberJuanRS.jpg" alt="">
-					<div class="overlay">
-						<h2>Number Juan</h2>
-						<a href="img/numberJuan.jpg" class="info fancybox" rel="group">View Full Image</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-xs-12 thumb">
-				<div class="hovereffect">
-						<img class="img-responsive" src="img/dessertdrinkRS.jpg" alt="">
-						<div class="overlay">
-							<h2>Dessert Drinks</h2>
-							<a href="img/dessertdrink.jpg"class="info fancybox" rel="group">View Full Image</a>
-						</div>
-					</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-xs-12 thumb">
-				<div class="hovereffect">
-					<img class="img-responsive" src="img/chipsRS.jpg" alt="">
-					<div class="overlay">
-						<h2>Fresh Chips</h2>
-						<a href="img/chips.jpg" class="info fancybox" rel="group">View Full Image</a>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-		</div>
-			
-		
-		
 
-		
 
-		<script>
+        <script>
 			function openNav() {
 				document.getElementById("mySidenav").style.width = "350px";
 				document.getElementById("main").style.marginLeft = "350px";
 				document.getElemetById("mainnav").style.marginLeft = "350px";
 			}
-
 			function closeNav() {
 				document.getElementById("mySidenav").style.width = "0";
 				document.getElementById("main").style.marginLeft = "0";
 				document.getElemetById("mainnav").style.marginLeft = "0";
 			}
-		</script>
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+        </script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-		
 
-	</body>
+
+</body>
 </div>
 
 <div class="footer" style="margin-top: -2px;">
-			<div class="container">
-				<div class="col-md-4">
-					<h3>Address</h3>
-					<p>3409 Woodland Ave, Cleveland, OH 44115</p>
-				</div>
-				<div class="col-md-4">
-					<h3>Contact Us</h3>
-					<p> (800) 954-8742</p>
-				</div>
-				<div class="container text-center">
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-google-plus"></i></a>
-					<a href="#"><i class="fa fa-skype"></i></a>
-				</div>
-			</div>
-		</div> <!--End Footer-->
-	</html>
+    <div class="container">
+        <div class="col-md-4">
+            <h3>Address</h3>
+            <p>3409 Woodland Ave, Cleveland, OH 44115</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Contact Us</h3>
+            <p> (800) 954-8742</p>
+        </div>
+        <div class="container text-center">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-skype"></i></a>
+        </div>
+    </div>
+</div> <!--End Footer-->
+</html>
