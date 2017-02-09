@@ -18,9 +18,15 @@
   <!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
-	<!-- Add mousewheel plugin (this is optional) -->
-	<script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
 
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".fancybox").fancybox();
+		});
+	</script>
 	<!-- Add fancyBox -->
 	<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.6" type="text/css" media="screen" />
 	<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.6"></script>
@@ -32,12 +38,6 @@
 
 	<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
 	<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-
-	<script type="text/javascript">
-	$(document).ready(function() {
-		$(".fancybox").fancybox();
-	});
-	</script>
    
 		
 </head>
@@ -90,72 +90,114 @@
 </nav>
 
   
-		<div class="container-fluid" style="border:1px solid #cecece;">
+		<div class="container-fluid" style="border:1px solid #cecece; min-height: 1200px;">
 		   <div class="container">
 				<div class="row">
 
-            <div class="col-lg-12">
-                <h1 class="page-header">Thumbnail Gallery</h1>
-            </div>
+			<div class="col-lg-12">
+				<h1 class="page-header">Thumbnail Gallery</h1>
+			</div>
 
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="img/chipsRS.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="img/japmargRS.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="img/vegetariandishRS.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="img/freshingredient3RS.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="img/tequilabottleRS.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="img/tamaleRS.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="img/entreeRS.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="img/numberJuanRS.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="img/dessertdrinkRS.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            
-        </div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				
+					<div class="hovereffect">
+						<img class="img-responsive" src="img/chipsRS.jpg" alt="">
+						<div class="overlay">
+							<h2>Fresh Chips</h2>
+							<a href="img/chips.jpg"class="info fancybox" rel="group">View Full Image</a>
+						</div>
+					</div>
+				
+			</div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<div class="hovereffect">
+					<img class="img-responsive" src="img/japmargRS.jpg" alt="">
+					<div class="overlay">
+						<h2>Fresh Chips</h2>
+						<a href="img/japmarg.jpg" class="info fancybox" rel="group">View Full Image</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<div class="hovereffect">
+					<img class="img-responsive" src="img/vegetariandishRS.jpg" alt="">
+					<div class="overlay">
+						<h2>Fresh Chips</h2>
+						<a href="img/vegetariandish.jpg" class="info fancybox" rel="group">View Full Image</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<div class="hovereffect">
+					<img class="img-responsive" src="img/freshingredient3RS.jpg" alt="">
+					<div class="overlay">
+						<h2>Fresh Chips</h2>
+						<a href="img/freshingredient3.jpg.jpg" class="info fancybox" rel="group">View Full Image</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<div class="hovereffect">
+					<img class="img-responsive" src="img/tequilabottleRS.jpg" alt="">
+					<div class="overlay">
+						<h2>Fresh Chips</h2>
+						<a href="img/tequilabottle.jpg" class="info fancybox" rel="group">View Full Image</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<div class="hovereffect">
+					<img class="img-responsive" src="img/tamaleRS.jpg" alt="">
+					<div class="overlay">
+						<h2>Fresh Chips</h2>
+						<a href="img/tamale.jpg" class="info fancybox" rel="group">View Full Image</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<div class="hovereffect">
+					<img class="img-responsive" src="img/entreeRS.jpg" alt="">
+					<div class="overlay">
+						<h2>Fresh Chips</h2>
+						<a href="img/entree.jpg" class="info fancybox" rel="group">View Full Image</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<div class="hovereffect">
+					<img class="img-responsive" src="img/numberJuanRS.jpg" alt="">
+					<div class="overlay">
+						<h2>Fresh Chips</h2>
+						<a href="img/numberJuan.jpg" class="info fancybox" rel="group">View Full Image</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<div class="hovereffect">
+						<img class="img-responsive" src="img/dessertdrinkRS.jpg" alt="">
+						<div class="overlay">
+							<h2>Fresh Chips</h2>
+							<a href="img/dessertdrink.jpg"class="info fancybox" rel="group">View Full Image</a>
+						</div>
+					</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<div class="hovereffect">
+					<img class="img-responsive" src="img/chipsRS.jpg" alt="">
+					<div class="overlay">
+						<h2>Fresh Chips</h2>
+						<a href="img/chips.jpg" class="info fancybox" rel="group">View Full Image</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
 		</div>
 			
 		
 		
 
-        
+		
 
 		<script>
 			function openNav() {
@@ -170,10 +212,8 @@
 				document.getElemetById("mainnav").style.marginLeft = "0";
 			}
 		</script>
-		<!--Generic Javascript file for all custom javascript-->
-		<script type="text/javascript" src="js/scripts.js"></script>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
