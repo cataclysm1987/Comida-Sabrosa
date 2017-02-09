@@ -8,6 +8,10 @@ Black: #0C0C0C
 *{
 
 }
+
+body {
+    min-height: 1200px;
+}
 @font-face {
   font-family: TequilaSunset;
   src: local("Tequila Sunset"),
@@ -312,12 +316,14 @@ hr {
 }
 
 .footer a {
-    color: #70726F;
+    color: #333;
     font-size: 20px;
     padding: 10px;
-    border-right: 1px solid #70726F;
+    border-right: 1px solid #333;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
+        margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .footer a:first-child {
