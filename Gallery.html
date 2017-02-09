@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 
 <html lang="en">
 <head>
@@ -18,9 +18,28 @@
   <!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
 
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.6" type="text/css" media="screen" />
+	<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.6"></script>
+
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+	<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+	<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+	<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+	</script>
    
-        
+		
 </head>
 
 <body>
@@ -55,13 +74,13 @@
 		<div id="navbar" class="navbar-collapse collapse">
 			<a class="navbar-brand">Comida Sabrosa</a>
 			<ul class="nav navbar-nav" id="ul-collapse">
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Menu.html">Menu</a></li>
-                <li><a href="Bio.html">Bio</a></li>
-                <li><a href="Gallery.html" class="active">Gallery</a></li>
-                <li><a href="Order.html">Order</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Menu.html">Menu</a></li>
+				<li><a href="Bio.html">Bio</a></li>
+				<li><a href="Gallery.html" class="active">Gallery</a></li>
+				<li><a href="Order.html">Order</a></li>
+				<li><a href="Contact.html">Contact</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right" id="navbar-right-order">
 				<li><i class="fa fa-credit-card fa-3x" aria-hidden="true" style="padding-top: 5px;"></i><a href="../navbar/" style="display: inline;" class="right-header-link">Order Online</a></li>
@@ -71,85 +90,115 @@
 </nav>
 
   
-        <div class="container-fluid" style="border:1px solid #cecece;">
-           <div class="container">
-                <div class="row">
-                    <span class="col-lg-3 col-md-3 col-sm-2">
-                        <img src="img/chips.jpg" class="img-responsive" alt="Cinque Terre" width="300" height="236" />
-                    </span>
-                    <span class="col-lg-3 col-md-3 col-sm-2">
-                        <img src="img/japmarg.jpg" class="img-responsive" alt="tamale" width="300" height="236" />
-                    </span>
-                    <span class="col-lg-3 col-md-3 col-sm-2">
-                        <img src="img/vegetariandish.jpg" class="img-responsive" alt="decor" width="300" height="236" />
-                    </span>
-                
+		<div class="container-fluid" style="border:1px solid #cecece;">
+		   <div class="container">
+				<div class="row">
 
-
-                
-                    <span class="col-lg-3 col-md-3 col-sm-2">
-                        <img src="img/freshingredient3.jpg" class="img-responsive" alt="Cilantro!" width="300" height="236" />
-                    </span>
-                    <span class="col-lg-3 col-md-3 col-sm-2">
-                        <img src="img/tequilabottle.jpg" class="img-responsive" alt="Patron!" width="300" height="236" />
-                    </span>
-                    <span class="col-lg-3 col-md-3 col-sm-2">
-                        <img src="img/tamale.jpg" class="img-responsive" alt="tamale!" width="300" height="236" />
-                    </span>
-                
-                
-                    <span class="col-lg-3 col-md-3 col-sm-2">
-                        <img src="img/entree.jpg" class="img-responsive" alt="entree" width="300" height="236" />
-                    </span>
-                    <span class="col-lg-3 col-md-3 col-sm-2">
-                        <img src="img/numberJuan.jpg" class="img-responsive" alt="tequila!" width="300" height="236" />
-                    </span>
-                    <span class="col-lg-3 col-md-3 col-sm-2">
-                        <img src="img/dessertdrink.jpg" class="img-responsive" alt="decor" width="300" height="236" />
-                    </span>
-                </div>
-             </div>
-        </div>
-
-        <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "350px";
-                document.getElementById("main").style.marginLeft = "350px";
-                document.getElemetById("mainnav").style.marginLeft = "350px";
-            }
-
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-                document.getElementById("main").style.marginLeft = "0";
-                document.getElemetById("mainnav").style.marginLeft = "0";
-            }
-        </script>
-        <!--Generic Javascript file for all custom javascript-->
-        <script type="text/javascript" src="js/scripts.js"></script>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-        <div class="footer">
-            <div class="container">
-                <div class="col-md-4">
-                    <h3>Address:</h3>
-                    <p>3409 Woodland Ave, Cleveland, OH 44115</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Contact Us:</h3>
-                    <p> (800) 954-8742</p>
-                </div>
-                <div class="container text-center">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                    <a href="#"><i class="fa fa-skype"></i></a>
-                </div>
+            <div class="col-lg-12">
+                <h1 class="page-header">Thumbnail Gallery</h1>
             </div>
-        </div> <!--End Footer-->
 
-    </body>
-</html>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/chipsRS.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/japmargRS.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/vegetariandishRS.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/freshingredient3RS.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/tequilabottleRS.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/tamaleRS.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/entreeRS.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/numberJuanRS.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/dessertdrinkRS.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+            
+        </div>
+		</div>
+			
+		
+		
+
+        
+
+		<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "350px";
+				document.getElementById("main").style.marginLeft = "350px";
+				document.getElemetById("mainnav").style.marginLeft = "350px";
+			}
+
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+				document.getElementById("main").style.marginLeft = "0";
+				document.getElemetById("mainnav").style.marginLeft = "0";
+			}
+		</script>
+		<!--Generic Javascript file for all custom javascript-->
+		<script type="text/javascript" src="js/scripts.js"></script>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+		
+
+	</body>
+</div>
+
+<div class="footer" style="margin-top: -2px;">
+			<div class="container">
+				<div class="col-md-4">
+					<h3>Address:</h3>
+					<p>3409 Woodland Ave, Cleveland, OH 44115</p>
+				</div>
+				<div class="col-md-4">
+					<h3>Contact Us:</h3>
+					<p> (800) 954-8742</p>
+				</div>
+				<div class="container text-center">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-google-plus"></i></a>
+					<a href="#"><i class="fa fa-skype"></i></a>
+				</div>
+			</div>
+		</div> <!--End Footer-->
+	</html>

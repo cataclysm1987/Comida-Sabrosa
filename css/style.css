@@ -8,6 +8,10 @@ Black: #0C0C0C
 *{
 
 }
+
+body {
+    min-height: 1200px;
+}
 @font-face {
   font-family: TequilaSunset;
   src: local("Tequila Sunset"),
