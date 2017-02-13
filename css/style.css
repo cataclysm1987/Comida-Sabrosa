@@ -506,4 +506,15 @@ div.circle-avatar{
 }
 
 
+/*Gallery image containers*/
+
+.gallery-container {
+    text-align: center;
+}
+
+.gallery-img {
+    margin: 0 auto;
+}
+
+
 
