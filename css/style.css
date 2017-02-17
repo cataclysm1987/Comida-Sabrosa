@@ -139,8 +139,10 @@ Black: #0C0C0C
 
 
 /*MEDIA QUERIES*/
-@media screen and (min-width: 1000px) and (max-width: 1206px) { 
-    
+@media screen and (max-width: 500px) , screen and (min-width: 100px) {
+  .jumbotron h2 {
+        font-size: 25px;
+    }
 }
 @media (max-width: 768px) {
 
